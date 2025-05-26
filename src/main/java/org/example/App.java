@@ -25,6 +25,10 @@ public class App {
             System.out.println(b);
         }
 
+
+        Book updatedBook = new Book(7, "name update", "author updated", 55.55);
+        bookDAO.updateBook(updatedBook);
+
         dbConnection.close();
     }
 }
