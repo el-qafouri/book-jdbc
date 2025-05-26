@@ -3,7 +3,7 @@ package org.example;
 public class Book {
 
     private int id;
-    private String name;
+    private String title;
     private String author;
     private double price;
 
@@ -11,14 +11,14 @@ public class Book {
     }
 
     public Book(String name, String author, double price) {
-        this.name = name;
+        this.title = name;
         this.author = author;
         this.price = price;
     }
 
     public Book(int id, String name, String author, double price) {
         this.id = id;
-        this.name = name;
+        this.title = name;
         this.author = author;
         this.price = price;
     }
@@ -31,12 +31,12 @@ public class Book {
         return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
     public void setAuthor(String author) {
@@ -59,7 +59,7 @@ public class Book {
     public String toString() {
         return "Book{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", name='" + title + '\'' +
                 ", author='" + author + '\'' +
                 ", price=" + price +
                 '}';
