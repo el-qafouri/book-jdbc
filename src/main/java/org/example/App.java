@@ -1,7 +1,8 @@
 package org.example;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
+import java.util.ArrayList;
+import java.util.List;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -15,9 +16,15 @@ public class App {
 //        st.execute();
 
 
-        Book book = new Book("book1", "myAuthor", 455.2);
+//        Book book = new Book("book1", "myAuthor", 455.2);
         BookDAO bookDAO = new BookDAO();
-        bookDAO.insertBook(book);
+//        bookDAO.insertBook(book);
+
+        List<Book> books = bookDAO.getAllBooks();
+        for (Book b : books) {
+            System.out.println(b);
+        }
+
         dbConnection.close();
     }
 }
