@@ -26,9 +26,10 @@ public class App {
         }
 
 
-        Book updatedBook = new Book(7, "name update", "author updated", 55.55);
-        bookDAO.updateBook(updatedBook);
+//        Book updatedBook = new Book(7, "name update", "author updated", 55.55);
+//        bookDAO.updateBook(updatedBook);
 
+        bookDAO.deleteBook(3);
         dbConnection.close();
     }
 }
