@@ -30,6 +30,8 @@ public class App {
 //        bookDAO.updateBook(updatedBook);
 
         bookDAO.deleteBook(3);
+
         dbConnection.close();
+        System.out.println(bookDAO.getBookById(6));
     }
 }
